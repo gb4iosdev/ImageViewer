@@ -51,6 +51,7 @@
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="photoView" destination="MVa-zC-hyT" id="pqr-aS-vV9"/>
+                                                    <segue destination="iUq-mc-3Jt" kind="show" identifier="showPhoto" id="mLg-qO-TG0"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -97,6 +98,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="132.68365817091455"/>
+        </scene>
+        <!--Photo Page Controller-->
+        <scene sceneID="i6e-nU-WBR">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="iUq-mc-3Jt" customClass="PhotoPageController" customModule="ImageViewer" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbm-3R-ph5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319" y="132"/>
+        </scene>
+        <!--Photo Viewer Controller-->
+        <scene sceneID="J3o-kU-cuv">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewerController" id="dWQ-5j-6VJ" customClass="PhotoViewerController" customModule="ImageViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ncm-Ss-t8M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7UL-Ik-WWq">
+                                <rect key="frame" x="0.0" y="193" width="375" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7UL-Ik-WWq" secondAttribute="height" multiplier="4:3" id="2Dt-6M-w5R"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7UL-Ik-WWq" firstAttribute="centerY" secondItem="Ncm-Ss-t8M" secondAttribute="centerY" id="RE8-3K-M5z"/>
+                            <constraint firstItem="7UL-Ik-WWq" firstAttribute="leading" secondItem="Ncm-Ss-t8M" secondAttribute="leading" id="XwR-AJ-bST"/>
+                            <constraint firstAttribute="trailing" secondItem="7UL-Ik-WWq" secondAttribute="trailing" id="juI-mI-mgE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GEe-9S-0co"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="7UL-Ik-WWq" id="ray-aK-eaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dT0-SI-Vtv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CWY-Rs-SNv">

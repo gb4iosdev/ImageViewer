@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86072F32236A4ECE003AD7E1 /* PhotoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86072F31236A4ECE003AD7E1 /* PhotoPageController.swift */; };
+		86072F34236A4FC0003AD7E1 /* PhotoViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86072F33236A4FC0003AD7E1 /* PhotoViewerController.swift */; };
 		863549562368FF9B00D7BBC8 /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863549552368FF9B00D7BBC8 /* PhotoPickerManager.swift */; };
 		97C520811F7B3E1A005642A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C520801F7B3E1A005642A3 /* AppDelegate.swift */; };
 		97C520861F7B3E1A005642A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C520841F7B3E1A005642A3 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86072F31236A4ECE003AD7E1 /* PhotoPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPageController.swift; sourceTree = "<group>"; };
+		86072F33236A4FC0003AD7E1 /* PhotoViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerController.swift; sourceTree = "<group>"; };
 		863549552368FF9B00D7BBC8 /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 		97C5207D1F7B3E1A005642A3 /* ImageViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C520801F7B3E1A005642A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86072F35236A5078003AD7E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97C520951F7B3F60005642A3 /* PhotoListController.swift */,
+				86072F31236A4ECE003AD7E1 /* PhotoPageController.swift */,
+				86072F33236A4FC0003AD7E1 /* PhotoViewerController.swift */,
+				97C5209E1F7B40D4005642A3 /* PhotosFetchedResultsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		97C520741F7B3E1A005642A3 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +83,7 @@
 		97C5207F1F7B3E1A005642A3 /* ImageViewer */ = {
 			isa = PBXGroup;
 			children = (
+				86072F35236A5078003AD7E1 /* Controller */,
 				97C520941F7B3F46005642A3 /* Starter Files */,
 				97C520801F7B3E1A005642A3 /* AppDelegate.swift */,
 				97C520841F7B3E1A005642A3 /* Main.storyboard */,
@@ -82,12 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				97C520921F7B3E31005642A3 /* CoreDataStack.swift */,
-				97C520951F7B3F60005642A3 /* PhotoListController.swift */,
 				863549552368FF9B00D7BBC8 /* PhotoPickerManager.swift */,
 				97C520971F7B3FBD005642A3 /* PhotoCell.swift */,
 				97C520991F7B4020005642A3 /* ImageViewer.xcdatamodeld */,
 				97C5209C1F7B403C005642A3 /* Photo.swift */,
-				97C5209E1F7B40D4005642A3 /* PhotosFetchedResultsController.swift */,
 				97C520A01F7B40F8005642A3 /* PhotosDataSource.swift */,
 			);
 			path = "Starter Files";
@@ -168,8 +182,10 @@
 				863549562368FF9B00D7BBC8 /* PhotoPickerManager.swift in Sources */,
 				97C5209D1F7B403C005642A3 /* Photo.swift in Sources */,
 				97C520931F7B3E31005642A3 /* CoreDataStack.swift in Sources */,
+				86072F34236A4FC0003AD7E1 /* PhotoViewerController.swift in Sources */,
 				97C5209B1F7B4020005642A3 /* ImageViewer.xcdatamodeld in Sources */,
 				97C520981F7B3FBD005642A3 /* PhotoCell.swift in Sources */,
+				86072F32236A4ECE003AD7E1 /* PhotoPageController.swift in Sources */,
 				97C5209F1F7B40D4005642A3 /* PhotosFetchedResultsController.swift in Sources */,
 				97C520961F7B3F60005642A3 /* PhotoListController.swift in Sources */,
 				97C520811F7B3E1A005642A3 /* AppDelegate.swift in Sources */,
