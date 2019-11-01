@@ -115,11 +115,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7UL-Ik-WWq">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7UL-Ik-WWq">
                                 <rect key="frame" x="0.0" y="193" width="375" height="281"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7UL-Ik-WWq" secondAttribute="height" multiplier="4:3" id="2Dt-6M-w5R"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pIL-CC-n2a" appends="YES" id="lNT-fL-smX"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,8 +139,56 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dT0-SI-Vtv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pIL-CC-n2a">
+                    <connections>
+                        <action selector="launchPhotoZoomController:" destination="dWQ-5j-6VJ" id="4jl-w4-HCB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2186" y="132"/>
+        </scene>
+        <!--Photo Zoom Controller-->
+        <scene sceneID="Qbi-9B-vm3">
+            <objects>
+                <viewController storyboardIdentifier="PhotoZoomController" id="RMz-LV-csF" customClass="PhotoZoomController" customModule="ImageViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wFV-MD-oF9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cf-0B-NhH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f3Y-ll-bnG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f3Y-ll-bnG" secondAttribute="trailing" id="9Gn-ss-E3x"/>
+                                    <constraint firstItem="f3Y-ll-bnG" firstAttribute="centerX" secondItem="7cf-0B-NhH" secondAttribute="centerX" placeholder="YES" id="Dxu-QR-Ozd"/>
+                                    <constraint firstItem="f3Y-ll-bnG" firstAttribute="top" secondItem="7cf-0B-NhH" secondAttribute="top" id="HmD-Mc-Fkj"/>
+                                    <constraint firstItem="f3Y-ll-bnG" firstAttribute="centerY" secondItem="7cf-0B-NhH" secondAttribute="centerY" placeholder="YES" id="Z8K-y5-wkq"/>
+                                    <constraint firstAttribute="bottom" secondItem="f3Y-ll-bnG" secondAttribute="bottom" id="ZAu-lZ-Vf0"/>
+                                    <constraint firstItem="f3Y-ll-bnG" firstAttribute="leading" secondItem="7cf-0B-NhH" secondAttribute="leading" id="zcx-oL-uEF"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7cf-0B-NhH" firstAttribute="leading" secondItem="wFV-MD-oF9" secondAttribute="leading" id="Q7Y-fR-vyv"/>
+                            <constraint firstItem="P2j-Bb-AED" firstAttribute="bottom" secondItem="7cf-0B-NhH" secondAttribute="bottom" id="fem-ER-lrH"/>
+                            <constraint firstAttribute="trailing" secondItem="7cf-0B-NhH" secondAttribute="trailing" id="one-Mq-aVm"/>
+                            <constraint firstItem="7cf-0B-NhH" firstAttribute="top" secondItem="P2j-Bb-AED" secondAttribute="top" id="xxT-in-AHl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P2j-Bb-AED"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="f3Y-ll-bnG" id="axF-tL-p4e"/>
+                        <outlet property="scrollView" destination="7cf-0B-NhH" id="5nr-qd-erg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCm-9e-O42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3090" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CWY-Rs-SNv">
