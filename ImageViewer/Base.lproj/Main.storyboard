@@ -170,6 +170,9 @@
                                     <constraint firstAttribute="bottom" secondItem="f3Y-ll-bnG" secondAttribute="bottom" id="ZAu-lZ-Vf0"/>
                                     <constraint firstItem="f3Y-ll-bnG" firstAttribute="leading" secondItem="7cf-0B-NhH" secondAttribute="leading" id="zcx-oL-uEF"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="RMz-LV-csF" id="0l7-Ha-0Kq"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,6 +185,10 @@
                         <viewLayoutGuide key="safeArea" id="P2j-Bb-AED"/>
                     </view>
                     <connections>
+                        <outlet property="imageViewBottomConstraint" destination="ZAu-lZ-Vf0" id="P0W-v0-Wy6"/>
+                        <outlet property="imageViewLeadingConstraint" destination="zcx-oL-uEF" id="YMK-G7-oTg"/>
+                        <outlet property="imageViewTopConstraint" destination="HmD-Mc-Fkj" id="jgW-pH-4H4"/>
+                        <outlet property="imageViewTrailingConstraint" destination="9Gn-ss-E3x" id="8de-2T-il9"/>
                         <outlet property="photoImageView" destination="f3Y-ll-bnG" id="axF-tL-p4e"/>
                         <outlet property="scrollView" destination="7cf-0B-NhH" id="5nr-qd-erg"/>
                     </connections>

@@ -23,6 +23,7 @@ class PhotoViewerController: UIViewController {
         
         let zoomController = storyboard.instantiateViewController(withIdentifier: "PhotoZoomController") as! PhotoZoomController
         
+        zoomController.modalTransitionStyle = .crossDissolve
         zoomController.photo = photo
         
         navigationController?.present(zoomController, animated: true, completion: nil)
