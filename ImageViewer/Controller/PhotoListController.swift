@@ -49,11 +49,22 @@ final class PhotoListController: UIViewController {
 
 extension PhotoListController: PhotoPickerManagerDelegate {
     func manager(_ manager: PhotoPickerManager, didPickImage image: UIImage) {
-        let _ = Photo.with(image, in: context)
+        //let _ = Photo.with(image, in: context)
         //First assign the image somewhere/to something and then dismiss the image picker
-        context.saveChanges()
+        //context.saveChanges()
+        
+        
         //Always dismiss the image picker when you're done with it
-        manager.dismissPhotoPicker(animated: true, completion: nil)
+        manager.dismissPhotoPicker(animated: true) {
+            guard let photoFilterController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoFilterController") as? PhotoFilterController else {
+                return }
+            
+            photoFilterController.photo = image
+            
+            let navController = UINavigationController(rootViewController: photoFilterController)
+            
+            self.navigationController?.present(navController, animated: true, completion: nil)
+        }
     }
 }
 
