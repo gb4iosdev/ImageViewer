@@ -23,11 +23,27 @@ class PhotoFilterController: UIViewController {
     
     var photo: UIImage?
     
+    lazy var displayPhoto: UIImage? = {
+        guard let image = photo else { return }
+        
+        let imageWidth = image.size.width
+        let imageHeight = image.size.height
+        let screenWidth = UIScreen.main.bounds.width
+        
+        let scaledRatio = screenWidth/imageWidth
+        let scaledHeight = scaledRatio * imageHeight
+        let size = CGSize(width: screenWidth, height: scaledHeight)
+        
+        return image.resized(to: size)
+    }()
+    var selectedFilter: CIFilter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoImageView.image = photo
+        photoImageView.image = displayPhoto
         filtersCollectionView.dataSource = self
+        filtersCollectionView.delegate = self
     }
 }
 
@@ -48,5 +64,13 @@ extension PhotoFilterController: UICollectionViewDataSource {
         cell.image = image
         
         return cell
+    }
+}
+
+extension PhotoFilterController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let filter = PhotoFilter.defaultFilters[indexPath.row]
+        self.selectedFilter = filter
+        
     }
 }

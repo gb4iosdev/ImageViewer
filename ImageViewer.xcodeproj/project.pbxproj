@@ -11,6 +11,7 @@
 		86072F34236A4FC0003AD7E1 /* PhotoViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86072F33236A4FC0003AD7E1 /* PhotoViewerController.swift */; };
 		862402B6236C9E5700AA8587 /* PhotoFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862402B5236C9E5700AA8587 /* PhotoFilterController.swift */; };
 		862402BA236CF7AE00AA8587 /* PhotoFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862402B9236CF7AE00AA8587 /* PhotoFilter.swift */; };
+		862B412F237192F800BDBA4C /* UIImage+Resizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B412E237192F800BDBA4C /* UIImage+Resizing.swift */; };
 		863549562368FF9B00D7BBC8 /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863549552368FF9B00D7BBC8 /* PhotoPickerManager.swift */; };
 		865053F8236BADD900584F4E /* PhotoZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865053F7236BADD900584F4E /* PhotoZoomController.swift */; };
 		867D1A56236F696400806255 /* FilteredImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D1A55236F696400806255 /* FilteredImageBuilder.swift */; };
@@ -33,6 +34,7 @@
 		86072F33236A4FC0003AD7E1 /* PhotoViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerController.swift; sourceTree = "<group>"; };
 		862402B5236C9E5700AA8587 /* PhotoFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterController.swift; sourceTree = "<group>"; };
 		862402B9236CF7AE00AA8587 /* PhotoFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilter.swift; sourceTree = "<group>"; };
+		862B412E237192F800BDBA4C /* UIImage+Resizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resizing.swift"; sourceTree = "<group>"; };
 		863549552368FF9B00D7BBC8 /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 		865053F7236BADD900584F4E /* PhotoZoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoZoomController.swift; sourceTree = "<group>"; };
 		867D1A55236F696400806255 /* FilteredImageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredImageBuilder.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				97C520A01F7B40F8005642A3 /* PhotosDataSource.swift */,
 				862402B9236CF7AE00AA8587 /* PhotoFilter.swift */,
 				867D1A55236F696400806255 /* FilteredImageBuilder.swift */,
+				862B412E237192F800BDBA4C /* UIImage+Resizing.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				862402B6236C9E5700AA8587 /* PhotoFilterController.swift in Sources */,
+				862B412F237192F800BDBA4C /* UIImage+Resizing.swift in Sources */,
 				863549562368FF9B00D7BBC8 /* PhotoPickerManager.swift in Sources */,
 				97C5209D1F7B403C005642A3 /* Photo.swift in Sources */,
 				97C520931F7B3E31005642A3 /* CoreDataStack.swift in Sources */,
