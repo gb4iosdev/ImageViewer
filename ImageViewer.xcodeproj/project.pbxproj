@@ -12,6 +12,8 @@
 		862402B6236C9E5700AA8587 /* PhotoFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862402B5236C9E5700AA8587 /* PhotoFilterController.swift */; };
 		862402BA236CF7AE00AA8587 /* PhotoFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862402B9236CF7AE00AA8587 /* PhotoFilter.swift */; };
 		862B412F237192F800BDBA4C /* UIImage+Resizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B412E237192F800BDBA4C /* UIImage+Resizing.swift */; };
+		8635424523723A89007379B3 /* ImageFiltrationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8635424423723A89007379B3 /* ImageFiltrationOperation.swift */; };
+		8635424723723CB3007379B3 /* PhotoMetadataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8635424623723CB3007379B3 /* PhotoMetadataController.swift */; };
 		863549562368FF9B00D7BBC8 /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863549552368FF9B00D7BBC8 /* PhotoPickerManager.swift */; };
 		865053F8236BADD900584F4E /* PhotoZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865053F7236BADD900584F4E /* PhotoZoomController.swift */; };
 		867D1A56236F696400806255 /* FilteredImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D1A55236F696400806255 /* FilteredImageBuilder.swift */; };
@@ -35,6 +37,8 @@
 		862402B5236C9E5700AA8587 /* PhotoFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterController.swift; sourceTree = "<group>"; };
 		862402B9236CF7AE00AA8587 /* PhotoFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilter.swift; sourceTree = "<group>"; };
 		862B412E237192F800BDBA4C /* UIImage+Resizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resizing.swift"; sourceTree = "<group>"; };
+		8635424423723A89007379B3 /* ImageFiltrationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltrationOperation.swift; sourceTree = "<group>"; };
+		8635424623723CB3007379B3 /* PhotoMetadataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMetadataController.swift; sourceTree = "<group>"; };
 		863549552368FF9B00D7BBC8 /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 		865053F7236BADD900584F4E /* PhotoZoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoZoomController.swift; sourceTree = "<group>"; };
 		867D1A55236F696400806255 /* FilteredImageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredImageBuilder.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 				97C5209E1F7B40D4005642A3 /* PhotosFetchedResultsController.swift */,
 				865053F7236BADD900584F4E /* PhotoZoomController.swift */,
 				862402B5236C9E5700AA8587 /* PhotoFilterController.swift */,
+				8635424623723CB3007379B3 /* PhotoMetadataController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				862402B9236CF7AE00AA8587 /* PhotoFilter.swift */,
 				867D1A55236F696400806255 /* FilteredImageBuilder.swift */,
 				862B412E237192F800BDBA4C /* UIImage+Resizing.swift */,
+				8635424423723A89007379B3 /* ImageFiltrationOperation.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 				862B412F237192F800BDBA4C /* UIImage+Resizing.swift in Sources */,
 				863549562368FF9B00D7BBC8 /* PhotoPickerManager.swift in Sources */,
 				97C5209D1F7B403C005642A3 /* Photo.swift in Sources */,
+				8635424723723CB3007379B3 /* PhotoMetadataController.swift in Sources */,
 				97C520931F7B3E31005642A3 /* CoreDataStack.swift in Sources */,
 				867D1A58236F6B8D00806255 /* FilteredImageCell.swift in Sources */,
 				865053F8236BADD900584F4E /* PhotoZoomController.swift in Sources */,
@@ -226,6 +233,7 @@
 				862402BA236CF7AE00AA8587 /* PhotoFilter.swift in Sources */,
 				86072F32236A4ECE003AD7E1 /* PhotoPageController.swift in Sources */,
 				867D1A56236F696400806255 /* FilteredImageBuilder.swift in Sources */,
+				8635424523723A89007379B3 /* ImageFiltrationOperation.swift in Sources */,
 				97C5209F1F7B40D4005642A3 /* PhotosFetchedResultsController.swift in Sources */,
 				97C520961F7B3F60005642A3 /* PhotoListController.swift in Sources */,
 				97C520811F7B3E1A005642A3 /* AppDelegate.swift in Sources */,
