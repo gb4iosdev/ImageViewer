@@ -18,6 +18,8 @@
 		865053F8236BADD900584F4E /* PhotoZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865053F7236BADD900584F4E /* PhotoZoomController.swift */; };
 		867D1A56236F696400806255 /* FilteredImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D1A55236F696400806255 /* FilteredImageBuilder.swift */; };
 		867D1A58236F6B8D00806255 /* FilteredImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D1A57236F6B8D00806255 /* FilteredImageCell.swift */; };
+		86FCE4D02372E3DD00100FF6 /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FCE4CE2372E3DD00100FF6 /* Tag+CoreDataClass.swift */; };
+		86FCE4D12372E3DD00100FF6 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FCE4CF2372E3DD00100FF6 /* Tag+CoreDataProperties.swift */; };
 		97C520811F7B3E1A005642A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C520801F7B3E1A005642A3 /* AppDelegate.swift */; };
 		97C520861F7B3E1A005642A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C520841F7B3E1A005642A3 /* Main.storyboard */; };
 		97C520881F7B3E1A005642A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C520871F7B3E1A005642A3 /* Assets.xcassets */; };
@@ -43,6 +45,9 @@
 		865053F7236BADD900584F4E /* PhotoZoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoZoomController.swift; sourceTree = "<group>"; };
 		867D1A55236F696400806255 /* FilteredImageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredImageBuilder.swift; sourceTree = "<group>"; };
 		867D1A57236F6B8D00806255 /* FilteredImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredImageCell.swift; sourceTree = "<group>"; };
+		86FCE4CD2372DF6300100FF6 /* ImageViewer 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ImageViewer 2.xcdatamodel"; sourceTree = "<group>"; };
+		86FCE4CE2372E3DD00100FF6 /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86FCE4CF2372E3DD00100FF6 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		97C5207D1F7B3E1A005642A3 /* ImageViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C520801F7B3E1A005642A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97C520851F7B3E1A005642A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +91,8 @@
 		862402B4236C9E0700AA8587 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86FCE4CE2372E3DD00100FF6 /* Tag+CoreDataClass.swift */,
+				86FCE4CF2372E3DD00100FF6 /* Tag+CoreDataProperties.swift */,
 				97C520991F7B4020005642A3 /* ImageViewer.xcdatamodeld */,
 				97C520921F7B3E31005642A3 /* CoreDataStack.swift */,
 				97C5209C1F7B403C005642A3 /* Photo.swift */,
@@ -229,6 +236,8 @@
 				865053F8236BADD900584F4E /* PhotoZoomController.swift in Sources */,
 				86072F34236A4FC0003AD7E1 /* PhotoViewerController.swift in Sources */,
 				97C5209B1F7B4020005642A3 /* ImageViewer.xcdatamodeld in Sources */,
+				86FCE4D02372E3DD00100FF6 /* Tag+CoreDataClass.swift in Sources */,
+				86FCE4D12372E3DD00100FF6 /* Tag+CoreDataProperties.swift in Sources */,
 				97C520981F7B3FBD005642A3 /* PhotoCell.swift in Sources */,
 				862402BA236CF7AE00AA8587 /* PhotoFilter.swift in Sources */,
 				86072F32236A4ECE003AD7E1 /* PhotoPageController.swift in Sources */,
@@ -427,9 +436,10 @@
 		97C520991F7B4020005642A3 /* ImageViewer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				86FCE4CD2372DF6300100FF6 /* ImageViewer 2.xcdatamodel */,
 				97C5209A1F7B4020005642A3 /* ImageViewer.xcdatamodel */,
 			);
-			currentVersion = 97C5209A1F7B4020005642A3 /* ImageViewer.xcdatamodel */;
+			currentVersion = 86FCE4CD2372DF6300100FF6 /* ImageViewer 2.xcdatamodel */;
 			path = ImageViewer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

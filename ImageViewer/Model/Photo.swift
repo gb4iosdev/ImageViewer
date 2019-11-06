@@ -13,6 +13,8 @@ import UIKit
 public class Photo: NSManagedObject {
     @NSManaged public var imageData: NSData
     @NSManaged public var creationDate: NSDate
+    @NSManaged public var caption: String?
+    @NSManaged public var tags: Set<Tag>        //Relationship is modeled as a property!
 }
 
 extension Photo {
