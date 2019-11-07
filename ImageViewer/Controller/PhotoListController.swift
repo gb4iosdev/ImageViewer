@@ -60,6 +60,7 @@ extension PhotoListController: PhotoPickerManagerDelegate {
                 return }
             
             photoFilterController.photo = image
+            photoFilterController.managedObjectContext = self.context
             
             let navController = UINavigationController(rootViewController: photoFilterController)
             

@@ -35,6 +35,15 @@ extension Tag {
         let request: NSFetchRequest<Tag> = Tag.fetchRequest()
         let predicate = NSPredicate(format: "name == %@", name)
         request.predicate = predicate
+        
+        if let tag = try! context.fetch(request).first {
+            return tag
+        } else {
+            let tag = NSEntityDescription.insertNewObject(forEntityName: Tag.entityName, into: context) as! Tag
+            tag.name = name
+            tag.photos = []
+            return tag
+        }
     }
 
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PhotoMetadataController: UITableViewController {
     
@@ -19,6 +20,7 @@ class PhotoMetadataController: UITableViewController {
     var photo: UIImage?
     var filter: CIFilter?
     var tags = [String]()
+    var context: NSManagedObjectContext?
     
     let queue = OperationQueue()
     
@@ -61,7 +63,13 @@ class PhotoMetadataController: UITableViewController {
     }
     
     @objc func savePhoto() {
+        guard let photo = photo, let context = context else { return }
+        let caption = captionTextField.text
         
+        let _ = Photo.with(photo, caption: caption, tags: tags, in: context)
+        context.saveChanges()
+        
+        dismiss(animated: true, completion: nil)
     }
 }
 
